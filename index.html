@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>13000 E Central Ave, Mayer, AZ 86333</title>
+  <link rel="stylesheet" href="./style.css">
+  <style type="text/css">
+    :root{
+
+/* ==================================== */
+/* ======== COLOURS & OPACITIES ======= */
+/* ==================================== */
+
+/* BASE COLOURS */  
+--Shine10: rgb(250 250 250 / 1.0); 
+--Shine08: rgb(250 250 250 / 0.8); 
+--Shine06: rgb(250 250 250 / 0.6);
+--Shine04: rgb(250 250 250 / 0.4); 
+--Shine02: rgb(250 250 250 / 0.2); 
+--Shine00: rgb(250 250 250 / 0.0);
+
+--Light10: rgb(220 220 250 / 1.0);     
+--Light08: rgb(220 220 250 / 0.8);  
+--Light06: rgb(220 220 250 / 0.6);    
+--Light04: rgb(220 220 250 / 0.4);  
+--Light02: rgb(220 220 250 / 0.2); 
+--Light00: rgb(220 220 250 / 0.0);
+
+--Dark10: rgb(080 090 110 / 1.0);    
+--Dark08: rgb(080 090 110 / 0.8);   
+--Dark06: rgb(080 090 110 / 0.6);   
+--Dark04: rgb(080 090 110 / 0.4);   
+--Dark02: rgb(080 090 110 / 0.2); 
+--Dark00: rgb(080 090 110 / 0.0);
+    
+--Shadow10: rgb(020 020 030 / 1.0);
+--Shadow08: rgb(020 020 030 / 0.8);
+--Shadow06: rgb(020 020 030 / 0.6);
+--Shadow04: rgb(020 020 030 / 0.4);
+--Shadow02: rgb(020 020 030 / 0.2);
+--Shadow00: rgb(020 020 030 / 0.0);
+
+--Red10: rgb(200 050 020 / 1.0); 
+--Red08: rgb(200 050 020 / 0.8); 
+--Red06: rgb(200 050 020 / 0.6);
+--Red04: rgb(200 050 020 / 0.4); 
+--Red02: rgb(200 050 020 / 0.2); 
+--Red00: rgb(200 050 020 / 0.0);
+
+--Purple10: rgb(040 015 050 / 1.0); 
+--Purple08: rgb(040 015 050 / 0.8); 
+--Purple06: rgb(040 015 050 / 0.6);
+--Purple04: rgb(040 015 050 / 0.4); 
+--Purple02: rgb(040 015 050 / 0.2); 
+--Purple00: rgb(040 015 050 / 0.0);
+
+--DarkBlue10: rgb(010 020 070 / 1.0); 
+--DarkBlue08: rgb(010 020 070 / 0.8); 
+--DarkBlue06: rgb(010 020 070 / 0.6);
+--DarkBlue04: rgb(010 020 070 / 0.4); 
+--DarkBlue02: rgb(010 020 070 / 0.2); 
+--DarkBlue00: rgb(010 020 070 / 0.0);
+
+--LightBlue10: rgb(010 050 150 / 1.0); 
+--LightBlue08: rgb(010 050 150 / 0.8); 
+--LightBlue06: rgb(010 050 150 / 0.6);
+--LightBlue04: rgb(010 050 150 / 0.4); 
+--LightBlue02: rgb(010 050 150 / 0.2); 
+--LightBlue00: rgb(010 050 150 / 0.0);
+
+--Green10: rgb(030 100 040 / 1.0); 
+--Green08: rgb(030 100 040 / 0.8); 
+--Green06: rgb(030 100 040 / 0.6);
+--Green04: rgb(030 100 040 / 0.4); 
+--Green02: rgb(030 100 040 / 0.2); 
+--Green00: rgb(030 100 040 / 0.0);
+
+--Yellow10: rgb(250 250 010 / 1.0); 
+--Yellow08: rgb(250 250 010 / 0.8); 
+--Yellow06: rgb(250 250 010 / 0.6);
+--Yellow04: rgb(250 250 010 / 0.4); 
+--Yellow02: rgb(250 250 010 / 0.2); 
+--Yellow00: rgb(250 250 010 / 0.0);
+  
+/* GRADIENTS AND FILLS */
+--Body-BG: linear-gradient(to top, 
+           var(--Purple10), 
+           var(--DarkBlue10));
+  
+--Head-BG: linear-gradient(to right,
+           var(--Shadow10) 0, 
+           var(--Shadow10) 50%,
+           var(--Shadow06) 100%);
+
+  /* MIN / MAX SCREEN SIZES [REM] */
+--screen-min-width: 30; 
+--screen-max-width: 110;
+  
+/* H1 FONT STYLING */  
+--h1-font-family: Noto Serif;
+--h1-min-size: 3.5;
+--h1-max-size: 10.0;
+--h1-line-height: clamp( calc(var(--h1-min) * 1.2 ), 
+                         calc(var(--h1-mid) * 1.2 ), 
+                         calc(var(--h1-max) * 1.2 ));
+
+/* H2 FONT STYLING */  
+--h2-font-family: Noto Serif;
+--h2-min-size: 2.0;
+--h2-max-size: 4.0;
+--h2-line-height: clamp( calc(var(--h2-min) * 1.2 ), 
+                         calc(var(--h2-mid) * 1.2 ), 
+                         calc(var(--h2-max) * 1.2 ));
+
+/* H3 FONT STYLING */
+--h3-font-family: Noto Serif;
+--h3-min-size: 2.5;
+--h3-max-size: 4.0; 
+--h3-line-height: clamp( calc(var(--h3-min) + 0.5rem ), 
+                         calc(var(--h3-mid) + 0.5rem ), 
+                         calc(var(--h3-max) + 0.5rem ));
+
+/* H4 FONT STYLING */
+--h4-font-family: Noto Serif;
+--h4-min-size: 2.5;
+--h4-max-size: 3.5; 
+--h4-line-height: clamp( calc(var(--h4-min) + 0.5rem ), 
+                         calc(var(--h4-mid) + 0.5rem ), 
+                         calc(var(--h4-max) + 0.5rem ));
+
+/* H5 FONT STYLING */
+--h5-font-family: Noto Serif;
+--h5-min-size: 2.5;
+--h5-max-size: 4.0; 
+--h5-line-height: clamp( calc(var(--h5-min) + 0.5rem ), 
+                         calc(var(--h5-mid) + 0.5rem ), 
+                         calc(var(--h5-max) + 0.5rem ));
+
+/* H6 FONT STYLING */
+--h6-font-family: Noto Serif;
+--h6-min-size: 2.0;
+--h6-max-size: 2.5; 
+--h6-line-height: clamp( calc(var(--h6-min) + 0.5rem ), 
+                  calc(var(--h6-mid) + 0.5rem ),                             
+                  calc(var(--h6-max) + 0.5rem ));
+    
+/* P FONT STYLING */
+--p1-font-family: Noto Serif;
+--p1-min-size: 1.4;
+--p1-max-size: 1.6; 
+--p1-line-height: clamp( calc(var(--p1-min) + 0.5rem), 
+                  calc(var(--p1-mid) + 0.5rem), 
+                  calc(var(--p1-max) + 0.5rem));
+  
+/* FONT SCALING CALCULATIONS - DON'T NEED TO EDIT */  
+  
+--h1-slope: calc((var(--h1-max-size) - var(--h1-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+--h2-slope: calc((var(--h2-max-size) - var(--h2-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+--h3-slope: calc((var(--h3-max-size) - var(--h3-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+--h4-slope: calc((var(--h4-max-size) - var(--h4-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+--h5-slope: calc((var(--h5-max-size) - var(--h5-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+--h6-slope: calc((var(--h6-max-size) - var(--h6-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+--p1-slope: calc((var(--p1-max-size) - var(--p1-min-size)) / 
+            (var(--screen-max-width) - var(--screen-min-width)));
+
+--h1-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--h1-slope)) + var(--h1-min-size));
+--h2-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--h2-slope)) + var(--h2-min-size));
+--h3-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--h3-slope)) + var(--h3-min-size));
+--h4-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--h4-slope)) + var(--h4-min-size));
+--h5-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--h5-slope)) + var(--h5-min-size));
+--h6-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--h6-slope)) + var(--h6-min-size));
+--p1-intersection: calc((-1 * var(--screen-min-width) 
+                   * var(--p1-slope)) + var(--p1-min-size));
+
+--h1-preferred: calc(var(--h1-intersection) + (var(--h1-slope) * 100));
+--h2-preferred: calc(var(--h2-intersection) + (var(--h2-slope) * 100));
+--h3-preferred: calc(var(--h3-intersection) + (var(--h3-slope) * 100));
+--h4-preferred: calc(var(--h4-intersection) + (var(--h4-slope) * 100));
+--h5-preferred: calc(var(--h5-intersection) + (var(--h5-slope) * 100));
+--h6-preferred: calc(var(--h6-intersection) + (var(--h6-slope) * 100));
+--p1-preferred: calc(var(--p1-intersection) + (var(--p1-slope) * 100));
+
+--h1-min: calc(var(--h1-min-size) * 1rem);
+--h1-mid: calc(var(--h1-preferred) * 1vw);
+--h1-max: calc(var(--h1-max-size) * 1rem);
+
+--h2-min: calc(var(--h2-min-size) * 1rem);
+--h2-mid: calc(var(--h2-preferred) * 1vw);
+--h2-max: calc(var(--h2-max-size) * 1rem);
+
+--h3-min: calc(var(--h3-min-size) * 1rem);
+--h3-mid: calc(var(--h3-preferred) * 1vw);
+--h3-max: calc(var(--h3-max-size) * 1rem);
+
+--h4-min: calc(var(--h4-min-size) * 1rem);
+--h4-mid: calc(var(--h4-preferred) * 1vw);
+--h4-max: calc(var(--h4-max-size) * 1rem);
+
+--h5-min: calc(var(--h5-min-size) * 1rem);
+--h5-mid: calc(var(--h5-preferred) * 1vw);
+--h5-max: calc(var(--h5-max-size) * 1rem);
+
+--h6-min: calc(var(--h6-min-size) * 1rem);
+--h6-mid: calc(var(--h6-preferred) * 1vw);
+--h6-max: calc(var(--h6-max-size) * 1rem);
+
+--p1-min: calc(var(--p1-min-size) * 1rem);
+--p1-mid: calc(var(--p1-preferred) * 1vw);
+--p1-max: calc(var(--p1-max-size) * 1rem);
+
+--h1-font-size: clamp(var(--h1-min), var(--h1-mid), var(--h1-max));
+--h2-font-size: clamp(var(--h2-min), var(--h2-mid), var(--h2-max));
+--h3-font-size: clamp(var(--h3-min), var(--h3-mid), var(--h3-max));
+--h4-font-size: clamp(var(--h4-min), var(--h4-mid), var(--h4-max));
+--h5-font-size: clamp(var(--h5-min), var(--h5-mid), var(--h5-max));
+--h6-font-size: clamp(var(--h6-min), var(--h6-mid), var(--h6-max));
+--p1-font-size: clamp(var(--p1-min), var(--p1-mid), var(--p1-max));
+  
+  } /* END OF ROOT */  
+
+/* ===================================== */
+
+html{
+font-size:62.5%;
+scroll-behavior: smooth;
+scroll-padding-top:9rem;
+}
+
+*, *::before, *::after{
+box-sizing:border-box;
+margin:0;
+padding:0;
+background-color: #fff !important;
+}
+
+body{
+position:relative;
+width:100%;
+overflow-x:hidden;
+height:auto;
+font-size:1.6rem;
+font-family:Noto Serif;
+color:var(--Light10);
+}
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+width:100%;
+height:100vh;
+background:var(--Body-BG);
+}
+
+h1{
+font-family:var(--h1-font-family);
+font-size:var(--h1-font-size);
+line-height:var(--h1-line-height);
+}
+
+h2{
+font-family:var(--h2-font-family);
+font-size:var(--h2-font-size);
+line-height:var(--h2-line-height);
+}
+
+h3{
+font-family:var(--h3-font-family);
+font-size:var(--h3-font-size);
+line-height:var(--h3-line-height);
+}
+
+h4{
+font-family:var(--h4-font-family);
+font-size:var(--h4-font-size);
+line-height:var(--h4-line-height);
+}
+
+h5{
+font-family:var(--h5-font-family);
+font-size:var(--h5-font-size);
+line-height:var(--h5-line-height);
+}
+
+h6{
+font-family:var(--h6-font-family);
+font-size:var(--h6-font-size);
+line-height:var(--h6-line-height);
+text-decoration:underline;
+text-align:center;
+margin-bottom:1rem;
+}
+
+p{
+font-family:var(--p1-font-family);
+font-size:var(--p1-font-size);
+line-height:var(--p1-line-height);
+}
+
+main{
+position:relative;
+width:100%;
+max-width:120rem;
+margin: 0 auto;
+height:auto;
+min-height:100vh;
+display:flex;
+flex-direction:column-reverse;
+
+padding-bottom:100vh;
+}
+
+header{
+position:relative;
+width:100%;
+height:calc(100vh - 7rem);
+max-height:100vmin;
+background:var(--Shadow10);
+display:flex;
+align-items:center;
+}
+
+header img{
+position:absolute;
+top:0;
+right:0;
+text-align:right;
+display:block;
+height:100%;
+width:75%;
+max-width:calc(100% - 2rem);
+object-fit:cover;
+object-position:bottom right;
+clip-path: polygon(25vmin 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+header h1{
+position:absolute;
+padding-left:2rem;
+background:var(--Head-BG);
+z-index:2;
+padding:0.5rem 5rem 0.5rem 2rem;
+text-shadow:0.5rem 0 0 var(--Shadow10);
+}
+
+nav{
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+z-index:999;
+width:100%;
+height:9rem;
+background:var(--Shadow10);
+margin-top:-2rem;
+display:flex;
+flex-wrap:wrap;
+align-content:flex-end;
+padding:0.5rem 1rem;
+}
+
+nav h3{
+flex:0 0 100%;
+font-size:calc(var(--h3-font-size) * 0.6);
+text-align:right;
+padding:0 1rem;
+color: crimson;
+}
+
+nav ul{
+position:relative;
+flex:1 1 calc((60rem - 100%) * 9999);
+list-style-type:none;
+display:flex;
+justify-content:space-around;
+padding:0 0.5rem 1rem 0.5rem;
+gap:1rem;
+}
+
+nav ul a{
+display: block;
+position: relative;
+flex: 1 1 0;
+height: 3rem;
+place-items: center;
+padding: 0.5rem 1rem 0.2rem 1rem;
+text-decoration: none;
+color: var(--Shine10);
+font-size: calc(var(--p1-font-size) * 0.8);
+font-weight: bold;
+letter-spacing: 0.05rem;
+text-align: center;
+}
+
+nav ul a::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+z-index:-2;
+width:100%;
+height:100%;
+background:var(--DarkBlue10);
+}
+
+nav ul a::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+width:100%;
+height:100%;
+background:var(--Yellow10);
+transform:scale(0,1);
+}
+
+nav ul a:hover{
+color:var(--DarkBlue10);
+}
+
+nav ul a:hover::after{
+transform:scale(1,1);
+transition:350ms;
+}
+
+section{
+position:relative;
+flex:1 1 100%;
+}
+
+section:nth-of-type(odd){
+background:var(--LightBlue10);
+}
+
+section:nth-of-type(even){
+background:var(--Green10);
+}
+
+section h2{
+position:relative;
+transform:translateX(-2rem);
+}
+
+section h2::before{
+content:"";
+position:relative;
+display:inline-block;
+width:2rem;
+height:2rem;
+border-left:2rem solid var(--Yellow10);
+border-top:1rem solid var(--Yellow00);
+border-bottom:1rem solid var(--Yellow00);
+margin-right:1rem;
+transform:scale(0,1);
+}
+
+section:target h2{
+color:yellow;
+transform:translateX(0rem);
+}
+
+section:target h2::before{
+transform:scale(1,1);
+}
+
+section#first-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1),
+section#second-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(2),
+section#third-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(3),
+section#fourth-section:target ~ nav ul:nth-of-type(2) a:nth-of-type(1),
+section#fifth-section:target ~ nav ul:nth-of-type(2) a:nth-of-type(2),
+section#sixth-section:target ~ nav ul:nth-of-type(2) a:nth-of-type(3){
+background:var(--Yellow10);
+color:var(--DarkBlue10);
+}
+
+nav ul:nth-of-type(1) a:nth-of-type(1){
+background:var(--Yellow10);
+color:var(--DarkBlue10);
+}
+
+section#second-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1),
+section#third-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1),
+section#fourth-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1),
+section#fifth-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1),
+section#sixth-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1){
+background:var(--Yellow00);
+color:var(--Shine10);
+}
+section#second-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1):hover,
+section#third-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1):hover,
+section#fourth-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1):hover,
+section#fifth-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1):hover,
+section#sixth-section:target ~ nav ul:nth-of-type(1) a:nth-of-type(1):hover{
+color:var(--DarkBlue10);
+}
+
+aside{
+position:relative;
+flex:1 1 calc((60rem - 100%) * 9999);
+padding:1rem;
+display:flex;
+flex-direction:column;
+gap:1rem;
+background:var(--Light10);
+color:var(--Shadow10);
+}
+
+.card-container{
+position:relative;
+flex:2 1 calc((60rem - 100%) * 9999);
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+gap:2rem;
+}
+
+.card{
+position:relative;
+flex:1 1 calc((60rem - 100%) * 9999);
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+gap:1rem;
+padding:1rem;
+background:var(--Light10);
+color:var(--Shadow10);
+}
+
+.card-image{
+position:relative;
+flex:1 1 calc((28rem - 100%) * 9999);
+margin:0 auto;
+display:grid;
+place-items:center;
+}
+
+.card-image img{
+display:block;
+width:calc(100% - 2rem);
+height:calc(100% - 2rem);
+max-width:15rem;
+aspect-ratio:1;
+object-fit:contain;
+}
+
+.card-text{
+position:relative;
+flex:2 1 calc((28rem - 100%) * 9999);
+display:flex;
+flex-direction:column;
+gap:1rem;
+}
+
+.large-image-container{
+position:relative;
+width:100%;
+height:auto;
+display:flex;
+flex-wrap:wrap;
+gap:1rem;
+}
+
+.large-text-images{
+position:relative;
+flex:1 1 calc((60rem - 100%) * 9999);
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+background:var(--Light10);
+padding:1rem;
+gap:1rem;
+}
+
+.large-image{
+position:relative;
+flex:1 1 calc((40rem - 100%) * 9999);
+display:grid;
+place-items:center;
+}
+
+.large-image img{
+width:100%;
+height:100%;
+
+object-position:center center;
+}
+
+.large-text{
+position:relative;
+flex:1.5 1 calc((35rem - 100%) * 9999);
+padding:1rem;
+color:var(--DarkBlue10);
+}
+
+.section-background{
+  position: -webkit-sticky;
+  position: sticky;
+  z-index:1;
+top:8rem;
+width:100%;
+height:calc(100vh - 8rem);
+  }
+
+.section-content{
+position:relative;
+margin-top:-50vh;
+z-index:2;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+padding:2rem 1rem 50vh 1rem;
+gap:2rem;
+}
+
+.first-section-background{
+background:url(../images/p22.jpg);
+background-size:cover;
+}
+
+.second-section-background{
+background:url(../images/p29.png);
+
+}
+
+
+
+
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+
+  <section id="sixth-section" style="color: #000 !important; margin-bottom: 22px; margin-top:22px;">
+<h1>Contact</h1> <br>
+Please call the owner directly: <a href="tel:920-428-9586">920-428-9586</a>
+</section>
+
+  
+
+  
+<section id="fifth-section" style="color: #000 !important;">
+<h1>Property | Lot Info.</h1><br>
+<p>Property Information, Subdivision Name: <span style="word-spacing: 4px; line-height: 1.4em;">MOE SUB, Living Sq. Ft: 2,460, Building Sq. Ft: 2,460 Legal Description: MOE SUBDIVISION PER MAP, 3/16, LOTS 2 AND 3, BLOCK 2 AND A PORTION OF WALTER MOE PLACER CLAIM IN THE BIG BUG DIST PER MS 1798, SE P ARCEL CORNER IS THE SE CORNER OF LOT 2, BLOCK 2 AKA THAT PARCEL I N REFERENCE PER LS 2015-0035631 FEE TITLE - 1.84 ACRES</span></p><br>
+<p>Lot Information, # of Buildings: 1, Land Sq. Ft: 80,150, Legal Lot Number: 2, Legal Block Number: 2, Acres: 1.84, State Use Description: FOURPLEX. Zoning: C2-3 | Permitted: Commercial. APN 50015224G.</p>
+
+</section>
+  
+<section id="fourth-section" style="color: #000 !important; margin-bottom: 22px; margin-top:22px;">
+<h1>Interior</h1> <br>
+Home features; built in 1981, Heating:Forced air, Cooling:Evaporative.
+</section>
+
+  
+<section id="third-section">
+<h1 style="color:#000;">Photos</h1> 
+
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p30.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p31.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p25.jpg" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p33.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p35.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p36.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p37.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p38.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p39.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p40.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p41.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p42.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p43.png" />
+</div> <!-- /large-image -->
+
+
+</div> <!-- /large-text-images -->
+
+  
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p7.png" />
+</div> <!-- /large-image -->
+
+</div> <!-- /large-text-images -->
+</div> <!-- /large-image-container -->
+  
+<div class="large-image-container">
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p10.png" />
+</div> <!-- /large-image -->
+
+</div> <!-- /large-text-images -->
+  
+<div class="large-text-images solid">
+<div class="large-image">
+<img src="../images/p8.png" />
+</div> <!-- /large-image -->
+
+</div> <!-- /large-text-images -->
+</div> <!-- /large-image-container -->
+  
+
+
+</section>
+  
+<section id="second-section">
+  
+<div class="section-background second-section-background"></div>
+  
+<div class="section-content" style="color: #000 !important;">
+  
+
+<h1>Exterior Information</h1><p>Construction Type: Concrete Building, Exterior Wall: Precast Concrete, Roof Covering Type: Composition Shingle, Roof Shape Type: Composition Shingle, Building Type: 4-Plex.</p>
+  
+
+  
+<div class="card-container">
+  
+<div class="card">
+<div class="card-image">
+<img src="../images/p18.png" />
+</div> <!-- /card-image -->
+<div class="card-text">
+<h6>Creek Side</h6>
+<p>Seasonal creek on the back-side of the property with gated access. </p> 
+</div> <!-- /card-text -->
+</div> <!-- /card -->
+  
+<div class="card">
+<div class="card-image">
+<img src="../images/p19.png" />
+</div> <!-- /card-image -->
+<div class="card-text">
+<h6>Water Access</h6>
+<p>Property in back has a well & pump house. (The 4-plex has public water)</p> 
+</div> <!-- /card-text -->
+</div> <!-- /card -->
+
+<div class="card">
+<div class="card-image">
+<img src="../images/p20.png" />
+</div> <!-- /card-image -->
+<div class="card-text">
+<h6>Ornate Design</h6>
+<p>The hand-crafted doors were inspiration for the latest interior remodel.</p> 
+</div> <!-- /card-text -->
+</div> <!-- /card -->
+  
+</div> <!-- /card-container --> 
+  
+  </div> <!-- /section-content -->
+</section>
+  
+<section id="first-section">
+  
+<div class="section-background first-section-background" style="color: #000 !important;"></div>
+  
+<div class="section-content" style="color: #000 !important;">
+<h1 style="color: #000;">Introduction</h1> 
+<p>Very nice 4 Plex and 2 acre storage yard; 4 Plex, block bldg, 2"insulation coated with synthetic stucco, all 4 have washer & dryer hookup, newer oversized septic system, apt #1 is ADA compliant - could be an office or business. 3 new mini splits and city water.
+<p>There's a well in the RV storage yard, all fenced / gated and 1 RV hookup. It's also across the street from Mayer fire dept. The property runs clear across Big Bug Creek to Hwy 69.</p>
+ <p>*Property can be split</p><hr>
+ <p><a target="_blank" href="https://www.bitchute.com/video/pTKNynajjJ1W/">Video slideshow can be found here.</a></p><hr>
+ <p><a target="_blank" href="https://www.bitchute.com/video/Y2YdclDOuUjv/">Secondary video found here.</a></p>
+  
+  </div>
+  
+</section>
+  
+<nav>
+  
+<h3>*Sale Pending: In-full Offers Take Priority, Owner&nbsp;Will&nbsp;Carry&nbsp;the&nbsp;Note. Call&nbsp;<a href="tel:920-428-9586">920-428-9586</a></h3>
+  
+<ul>
+  
+<a href="#first-section">
+<li style="color: #fff !important; background-color: #000 !important;">Introduction</li>
+</a>
+  
+<a href="#second-section">
+<li style="color: #fff !important; background-color: #000 !important;">Exterior</li>
+</a>
+  
+<a href="#third-section">
+<li style="color: #fff !important; background-color: #000 !important;">Photos</li>
+</a>
+  
+</ul>
+  
+<ul>
+  
+<a href="#fourth-section">
+<li style="color: #fff !important; background-color: #000 !important;">Interior</li>
+</a>
+  
+<a href="#fifth-section">
+<li style="color: #fff !important; background-color: #000 !important;">Property Info.</li>
+</a>
+  
+<a href="#sixth-section">
+<li style="color: #fff !important; background-color: #000 !important;">Contact</li>
+</a>
+  
+</ul>
+  
+</nav>  
+  
+<header>
+  
+<img src="../images/p21.png" />
+<h1>
+For Sale
+<p style="background-color: #000 !important;">13000 E Central Ave, Mayer, AZ 86333</p>
+</h1>
+  
+
+</header>
+  
+</main>
+<!-- partial -->
+  
+</body>
+</html>
